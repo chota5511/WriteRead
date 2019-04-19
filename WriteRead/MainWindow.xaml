@@ -1,4 +1,4 @@
-﻿<Window x:Class="WriteRead.MainWindow"
+<Window x:Class="WriteRead.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,26 +8,26 @@
         Title="MainWindow" Height="280" Width="700">
     <Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10">
-            
+
             <GroupBox Header="Thông tin" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
                 <StackPanel Orientation="Vertical" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
                     <Grid>
                         <Label Content="MSSV" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
                         <TextBox Name="tbID" Width="175" Height="25" VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
                     </Grid>
-                    
+
                     <Grid>
                         <Label Content="Họ và tên" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
                         <TextBox Name="tbName" Width="175" Height="25" VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
                     </Grid>
-                    
+
                     <Grid>
                         <Label Content="Ngày sinh" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
                         <TextBox Name="tbDoB" Width="175" Height="25" VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
                     </Grid>
                 </StackPanel>
             </GroupBox>
-            
+
             <GroupBox Header="Điểm" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
                 <StackPanel Orientation="Vertical" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
                     <Grid>
@@ -49,10 +49,10 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
-            <Button Name="btWrite" Content="Ghi" Width="70" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
-            <Button Name="btRead" Content="Đọc" Width="70" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+            <Button Name="btWrite" Content="Ghi" Width="70" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Click="BtWrite_Click"/>
+            <Button Name="btRead" Content="Đọc" Width="70" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Click="BtRead_Click"/>
             <TextBox Name="tbPath" Width="370" Height="25"  VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
-            <Button Name="btBrowse" Content="Đường dẫn" Width="70" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+            <Button Name="btBrowse" Content="Đường dẫn" Width="70" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10" Click="BtBrowse_Click"/>
         </StackPanel>
     </Grid>
 </Window>
