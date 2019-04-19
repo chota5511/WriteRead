@@ -66,10 +66,28 @@ namespace WriteRead
             this.Math = _math;
         }
 
+        public Student(string _student)
+        {
+            string[] content = _student.Split('\n');
+            if(content.Length == 6)
+            {
+                this.ID = int.Parse(content[0]);
+                this.Name = content[1];
+                this.DateOfBirth = content[2];
+                this.English = float.Parse(content[3]);
+                this.Math = float.Parse(content[4]);
+            }
+        }
+
         //Method
         public float Average()
         {
             return (this.English + this.Math) / 2;
+        }
+
+        public string toString()
+        {
+            return this.ID + "\n" + this.Name + "\n" + this.DateOfBirth + "\n" + this.English + "\n" + this.Math + "\n" + this.Average();
         }
     }
 }
