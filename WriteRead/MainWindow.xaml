@@ -1,0 +1,58 @@
+﻿<Window x:Class="WriteRead.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WriteRead"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="280" Width="700">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10">
+            
+            <GroupBox Header="Thông tin" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                <StackPanel Orientation="Vertical" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Grid>
+                        <Label Content="MSSV" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+                        <TextBox Name="tbID" Width="175" Height="25" VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+                    </Grid>
+                    
+                    <Grid>
+                        <Label Content="Họ và tên" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+                        <TextBox Name="tbName" Width="175" Height="25" VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+                    </Grid>
+                    
+                    <Grid>
+                        <Label Content="Ngày sinh" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+                        <TextBox Name="tbDoB" Width="175" Height="25" VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+            
+            <GroupBox Header="Điểm" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                <StackPanel Orientation="Vertical" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Grid>
+                        <Label Content="Anh Văn" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+                        <TextBox Name="tbEnglish" Width="175" VerticalContentAlignment="Center" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+                    </Grid>
+
+                    <Grid>
+                        <Label Content="Toán" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+                        <TextBox Name="tbMath" Width="175" VerticalContentAlignment="Center" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+                    </Grid>
+
+                    <Grid>
+                        <Label Content="Điểm trung bình" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+                        <TextBox Name="tbAvg" Width="175" VerticalContentAlignment="Center" Height="25" HorizontalAlignment="Right" IsEnabled="False" VerticalAlignment="Center" Margin="10"/>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="btWrite" Content="Ghi" Width="70" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+            <Button Name="btRead" Content="Đọc" Width="70" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+            <TextBox Name="tbPath" Width="370" Height="25"  VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+            <Button Name="btBrowse" Content="Đường dẫn" Width="70" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
